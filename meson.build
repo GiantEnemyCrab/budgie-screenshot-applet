@@ -22,7 +22,7 @@ am_cflags = [
 
 add_global_arguments(am_cflags, language: 'c')
 
-LIB_INSTALL_DIR = join_paths(get_option('prefix'), get_option('libdir'), 'budgie-desktop', 'plugins', meson.project_name())
+LIB_INSTALL_DIR = join_paths(get_option('prefix'), 'lib', 'budgie-desktop', 'plugins', meson.project_name())
 
 subdir('src')
 subdir('data')
